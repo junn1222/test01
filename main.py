@@ -52,20 +52,20 @@ if st.checkbox('Show Image'):
 
 st.write('DataFrame')
 
-df = pd.DataFrame({
+df1 = pd.DataFrame({
     ' 1列目':[1,2,3,4],
     ' 2列目':[10,20,30,40]
 })
 
-df = pd.DataFrame(
+df2 = pd.DataFrame(
     np.random.rand(100,2)/[50,50] + [35.69,139.70],
     columns=['lat','lon']
 )
 
-st.map(df)
-st.line_chart(df)
-st.area_chart(df)
-st.bar_chart(df)
+st.map(df1)
+st.line_chart(df2)
+st.area_chart(df2)
+st.bar_chart(df2)
 
 
 #静的表
