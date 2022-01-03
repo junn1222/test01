@@ -58,7 +58,7 @@ df1 = pd.DataFrame({
 })
 
 df2 = pd.DataFrame(
-    np.random.rand(100,2)/[50,50] + [35.69,139.70],
+    np.random.rand(100,2)/[50,50] + [34.3172,135.141],
     columns=['lat','lon']
 )
 
