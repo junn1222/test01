@@ -33,45 +33,45 @@ expander2.write('a')
 expander3=st.expander('問い合わせ')
 expander3.write('a')
 
-# text =st.text_input('あなたの趣味を教えてください。')
-# 'あなたの趣味：',text
+text =st.sidebar.text_input('あなたの趣味を教えてください。')
+'あなたの趣味：',text
 
-# option=st.selectbox(
-#     'Tell your favorite number',
-#     list(range(1,11))
-# )
-# 'あなたの好きな数字は', option,'です。'
+option=st.sidebar.selectbox(
+    'Tell your favorite number',
+    list(range(1,11))
+)
+'あなたの好きな数字は', option,'です。'
 
-# condition = st.slider('あなたの今の調子は？',0,100,50)
-# 'コンディション：',condition
+condition = st.sidebar.slider('あなたの今の調子は？',0,100,50)
+'コンディション：',condition
 
-# if st.checkbox('Show Image'):
-#     img = Image.open('sample.jpg')
-#     st.image(img,caption='激うまチャーライ',use_column_width=True)
-
-
-# st.write('DataFrame')
-
-# df = pd.DataFrame({
-#     ' 1列目':[1,2,3,4],
-#     ' 2列目':[10,20,30,40]
-# })
-
-# df = pd.DataFrame(
-#     np.random.rand(100,2)/[50,50] + [35.69,139.70],
-#     columns=['lat','lon']
-# )
-
-# st.map(df)
-# st.line_chart(df)
-# st.area_chart(df)
-# st.bar_chart(df)
+if st.checkbox('Show Image'):
+    img = Image.open('sample.jpg')
+    st.image(img,caption='激うまチャーライ',use_column_width=True)
 
 
-# #静的表
-# st.table(df.style.highlight_max(axis=1))
-# #動的表
-# st.dataframe(df.style.highlight_max(axis=0))
+st.write('DataFrame')
+
+df = pd.DataFrame({
+    ' 1列目':[1,2,3,4],
+    ' 2列目':[10,20,30,40]
+})
+
+df = pd.DataFrame(
+    np.random.rand(100,2)/[50,50] + [35.69,139.70],
+    columns=['lat','lon']
+)
+
+st.map(df)
+st.line_chart(df)
+st.area_chart(df)
+st.bar_chart(df)
+
+
+#静的表
+st.table(df.style.highlight_max(axis=1))
+#動的表
+st.dataframe(df.style.highlight_max(axis=0))
 
 # """
 # # 章
