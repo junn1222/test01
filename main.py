@@ -15,7 +15,7 @@ bar =st.progress(0)
 for i in range(100):
     latest_iteration.text(f'Iteration {i+1}')
     bar.progress(i+1)
-    time.sleep(0.01)
+    time.sleep(0.001)
 
 'Done!!!'
 
@@ -62,16 +62,16 @@ df2 = pd.DataFrame(
     columns=['lat','lon']
 )
 
-st.map(df1)
-st.line_chart(df2)
-st.area_chart(df2)
-st.bar_chart(df2)
+st.map(df2)
+st.line_chart(df1)
+st.area_chart(df1)
+st.bar_chart(df1)
 
 
 #静的表
-st.table(df.style.highlight_max(axis=1))
+st.table(df1.style.highlight_max(axis=1))
 #動的表
-st.dataframe(df.style.highlight_max(axis=0))
+st.dataframe(df1.style.highlight_max(axis=0))
 
 # """
 # # 章
