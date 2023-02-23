@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 
-st.title('中濱のお戯れサイト')
+st.title('なかはまの戯れ')
 
 st.write('プログレスバーの表示')
 'Start!!'
